@@ -86,6 +86,10 @@ GROQ_MODEL = "llama-3.3-70b-versatile"
 
 For Gemini, use `LLM_PROVIDER = "gemini"`, `GEMINI_API_KEY`, and `GEMINI_MODEL`. Never commit `.env` or `secrets.toml`.
 
+### If dependency installation fails
+
+Community Cloud can use a newer Python version than the local development machine. This repository pins Python 3.14-compatible wheels for Streamlit, pandas, SciPy, scikit-learn, and FAISS. If an existing failed app still uses a cached environment, open **Manage app → Settings**, delete the failed app, and redeploy from the same repository with **Advanced settings → Python 3.12** selected. Streamlit documents that the Python version is chosen during deployment and cannot be changed in place after deployment [7].
+
 ## Provider choice
 
 The implementation keeps the provider configurable because free-tier availability and quotas can change. Groq's official quickstart documents the `llama-3.3-70b-versatile` chat-completion path and environment-variable key setup [1]. Google's official Gemini documentation describes a free developer tier and project-level RPM/TPM/RPD quota behavior [2] [3]. The app therefore includes retries, bounded output, and user-facing error messages rather than assuming unlimited access.
@@ -110,3 +114,4 @@ A concise way to explain the project is: “I built a resume-aware interview coa
 [4]: https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/ "Machine Learning Interview Questions and Answers"
 [5]: https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/ "Backend Developer Interview Questions"
 [6]: https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/ "Using the STAR method for your next behavioral interview"
+[7]: https://docs.streamlit.io/deploy/streamlit-community-cloud/manage-your-app/upgrade-python "Upgrade your app's Python version on Community Cloud"
