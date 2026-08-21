@@ -1,0 +1,3222 @@
+[
+  {
+    "id": "ai/-001",
+    "domain": "AI/ML",
+    "question": "How would you explain the difference between AI, machine learning, and data science?",
+    "answer_framework": "Define the scope of each field, then show how ML sits inside AI and supports data-science workflows.",
+    "topic": "ML fundamentals",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "ML fundamentals"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-002",
+    "domain": "AI/ML",
+    "question": "What does it mean for a model to generalize well?",
+    "answer_framework": "Connect training performance to unseen-data performance and mention validation design, leakage, and distribution shift.",
+    "topic": "generalization",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "generalization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-003",
+    "domain": "AI/ML",
+    "question": "What causes overfitting, and how would you reduce it?",
+    "answer_framework": "Identify high variance, then discuss regularization, simpler models, cross-validation, early stopping, and more data.",
+    "topic": "overfitting",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "overfitting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-004",
+    "domain": "AI/ML",
+    "question": "How would you diagnose and fix underfitting?",
+    "answer_framework": "Use train and validation errors: add signal/features, increase capacity, reduce excessive regularization, or train longer.",
+    "topic": "underfitting",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "underfitting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-005",
+    "domain": "AI/ML",
+    "question": "Explain the bias-variance trade-off with a practical example.",
+    "answer_framework": "Define bias and variance, relate them to underfit/overfit, then describe validation-driven model selection.",
+    "topic": "bias variance",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "bias variance"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-006",
+    "domain": "AI/ML",
+    "question": "Compare L1, L2, and Elastic Net regularization.",
+    "answer_framework": "State the penalty shape, sparsity behavior, correlated-feature behavior, and when each is useful.",
+    "topic": "regularization",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "regularization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-007",
+    "domain": "AI/ML",
+    "question": "When would you use stratified k-fold cross-validation?",
+    "answer_framework": "Explain folds, class-ratio preservation, leakage prevention, and why it is appropriate for imbalanced classification.",
+    "topic": "cross validation",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "cross validation"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-008",
+    "domain": "AI/ML",
+    "question": "Give examples of data leakage in an ML pipeline.",
+    "answer_framework": "Mention preprocessing before splitting, target-derived features, duplicate users across folds, and future information.",
+    "topic": "data leakage",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "data leakage"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-009",
+    "domain": "AI/ML",
+    "question": "How would you handle missing values in a production dataset?",
+    "answer_framework": "Profile missingness, distinguish MCAR/MAR/MNAR, fit imputers on train only, add indicators, and monitor drift.",
+    "topic": "missing values",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "missing values"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-010",
+    "domain": "AI/ML",
+    "question": "How do outliers affect different models and metrics?",
+    "answer_framework": "Explain sensitivity of means, linear models, and distance methods; compare clipping, robust scaling, transformations, and investigation.",
+    "topic": "outliers",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "outliers"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-011",
+    "domain": "AI/ML",
+    "question": "When is feature scaling important?",
+    "answer_framework": "Contrast tree models with distance/gradient-based models and explain standardization versus normalization.",
+    "topic": "scaling",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "scaling"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-012",
+    "domain": "AI/ML",
+    "question": "How would you encode high-cardinality categorical variables?",
+    "answer_framework": "Compare one-hot, hashing, target encoding with leakage-safe folds, embeddings, and frequency encoding.",
+    "topic": "encoding",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "encoding"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-013",
+    "domain": "AI/ML",
+    "question": "What would you do when the positive class is rare?",
+    "answer_framework": "Choose business-aware metrics, resampling or class weights, threshold tuning, calibration, and stratified evaluation.",
+    "topic": "class imbalance",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "class imbalance"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-014",
+    "domain": "AI/ML",
+    "question": "Explain precision, recall, and F1 using an interview-screening example.",
+    "answer_framework": "Define false positives/negatives, map costs to the metric, and explain why F1 is a compromise rather than a universal choice.",
+    "topic": "precision recall",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "precision recall"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-015",
+    "domain": "AI/ML",
+    "question": "What does ROC-AUC measure and when can it mislead?",
+    "answer_framework": "Describe ranking across thresholds, then note imbalance, precision-recall curves, calibration, and operating-point costs.",
+    "topic": "ROC AUC",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "ROC AUC"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-016",
+    "domain": "AI/ML",
+    "question": "How would you check whether predicted probabilities are calibrated?",
+    "answer_framework": "Use reliability diagrams and Brier score; apply Platt scaling or isotonic regression on held-out data.",
+    "topic": "calibration",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "calibration"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-017",
+    "domain": "AI/ML",
+    "question": "Compare MAE, MSE, RMSE, and MAPE.",
+    "answer_framework": "Discuss units, outlier sensitivity, asymmetric business costs, and MAPE instability near zero.",
+    "topic": "regression metrics",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "regression metrics"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-018",
+    "domain": "AI/ML",
+    "question": "How do you decide whether a feature is useful?",
+    "answer_framework": "Check causal plausibility, availability at inference, leakage, univariate signal, ablation, and validation lift.",
+    "topic": "feature engineering",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "feature engineering"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-019",
+    "domain": "AI/ML",
+    "question": "Why are decision trees prone to overfitting?",
+    "answer_framework": "Explain recursive partitioning and high variance, then cover depth limits, pruning, minimum leaf size, and ensembles.",
+    "topic": "trees",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "trees"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-020",
+    "domain": "AI/ML",
+    "question": "Why can random forests generalize better than a single tree?",
+    "answer_framework": "Describe bootstrap samples, random feature subsets, variance reduction, out-of-bag estimates, and trade-offs.",
+    "topic": "random forest",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "random forest"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-021",
+    "domain": "AI/ML",
+    "question": "Compare bagging and boosting.",
+    "answer_framework": "Bagging trains independent learners to reduce variance; boosting builds sequentially to reduce bias, with different failure modes.",
+    "topic": "boosting",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "boosting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-022",
+    "domain": "AI/ML",
+    "question": "What affects gradient-descent convergence?",
+    "answer_framework": "Cover learning rate, feature scale, batch size, curvature, initialization, schedules, and stopping criteria.",
+    "topic": "gradient descent",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "gradient descent"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-023",
+    "domain": "AI/ML",
+    "question": "Why is logistic regression useful despite being simple?",
+    "answer_framework": "Explain probabilistic linear decision boundaries, interpretability, regularization, calibration, and strong baselines.",
+    "topic": "logistic regression",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "logistic regression"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-024",
+    "domain": "AI/ML",
+    "question": "When might an SVM be a good choice?",
+    "answer_framework": "Mention margin maximization, kernels for nonlinear boundaries, scaling needs, and limits with very large datasets.",
+    "topic": "SVM",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "SVM"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-025",
+    "domain": "AI/ML",
+    "question": "How would you evaluate a clustering result without labels?",
+    "answer_framework": "Use silhouette or stability plus domain validation; explain that a metric cannot replace meaningful cluster use.",
+    "topic": "clustering",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "clustering"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-026",
+    "domain": "AI/ML",
+    "question": "What does PCA optimize and what information can it lose?",
+    "answer_framework": "Describe orthogonal variance-maximizing components, preprocessing, dimensionality reduction, and interpretability trade-offs.",
+    "topic": "PCA",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "PCA"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-027",
+    "domain": "AI/ML",
+    "question": "How would you evaluate a recommender system offline and online?",
+    "answer_framework": "Separate ranking metrics, coverage/diversity/novelty, counterfactual limits, and A/B testing with guardrails.",
+    "topic": "recommendation",
+    "difficulty": "hard",
+    "tags": [
+      "ai",
+      "ml",
+      "recommendation"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-028",
+    "domain": "AI/ML",
+    "question": "How would you handle class imbalance in an image classifier?",
+    "answer_framework": "Use stratified splits, augmentation, weighted loss, per-class metrics, thresholding, and check minority-image quality.",
+    "topic": "computer vision",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "computer vision"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-029",
+    "domain": "AI/ML",
+    "question": "Why is transfer learning useful for computer vision?",
+    "answer_framework": "Reuse pretrained visual features, freeze/unfreeze progressively, adapt augmentation, and validate domain mismatch.",
+    "topic": "transfer learning",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "transfer learning"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-030",
+    "domain": "AI/ML",
+    "question": "What is an embedding and how would you use it in search?",
+    "answer_framework": "Explain dense vectors encoding similarity, nearest-neighbor retrieval, normalization, evaluation queries, and freshness.",
+    "topic": "embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "embeddings"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-031",
+    "domain": "AI/ML",
+    "question": "What is the difference between an LLM and a traditional supervised model?",
+    "answer_framework": "Contrast objective, open-ended generation, in-context learning, evaluation, grounding, and safety controls.",
+    "topic": "LLM",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "LLM"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-032",
+    "domain": "AI/ML",
+    "question": "Why use retrieval-augmented generation instead of only prompting an LLM?",
+    "answer_framework": "Ground responses in current/domain documents, reduce unsupported claims, expose sources, and manage retrieval quality.",
+    "topic": "RAG",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "RAG"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-033",
+    "domain": "AI/ML",
+    "question": "How would you choose chunk size for a RAG system?",
+    "answer_framework": "Balance semantic completeness, retrieval precision, context budget, overlap, document structure, and measure recall.",
+    "topic": "chunking",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "chunking"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-034",
+    "domain": "AI/ML",
+    "question": "Compare lexical search and vector search.",
+    "answer_framework": "Lexical search matches terms; vector search captures meaning; hybrid retrieval combines exact identifiers and semantic recall.",
+    "topic": "vector search",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "vector search"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-035",
+    "domain": "AI/ML",
+    "question": "What makes a production prompt reliable?",
+    "answer_framework": "Specify role, task, constraints, schema, grounded context, refusal behavior, examples, and test cases.",
+    "topic": "prompting",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "prompting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-036",
+    "domain": "AI/ML",
+    "question": "How would you reduce hallucinations in an LLM application?",
+    "answer_framework": "Use retrieval, citations, constrained output, lower temperature, validation, abstention, and monitoring.",
+    "topic": "hallucination",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "hallucination"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-037",
+    "domain": "AI/ML",
+    "question": "How would you evaluate a RAG application?",
+    "answer_framework": "Measure retrieval recall/precision and answer faithfulness/relevance, with golden sets, human review, and regression tests.",
+    "topic": "evaluation",
+    "difficulty": "hard",
+    "tags": [
+      "ai",
+      "ml",
+      "evaluation"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-038",
+    "domain": "AI/ML",
+    "question": "How would you explain the difference between AI, machine learning, and data science? Give a concrete example from a project.",
+    "answer_framework": "Define the scope of each field, then show how ML sits inside AI and supports data-science workflows.",
+    "topic": "ML fundamentals",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "ML fundamentals"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-039",
+    "domain": "AI/ML",
+    "question": "What does it mean for a model to generalize well? Give a concrete example from a project.",
+    "answer_framework": "Connect training performance to unseen-data performance and mention validation design, leakage, and distribution shift.",
+    "topic": "generalization",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "generalization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-040",
+    "domain": "AI/ML",
+    "question": "What causes overfitting, and how would you reduce it? Give a concrete example from a project.",
+    "answer_framework": "Identify high variance, then discuss regularization, simpler models, cross-validation, early stopping, and more data.",
+    "topic": "overfitting",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "overfitting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-041",
+    "domain": "AI/ML",
+    "question": "How would you diagnose and fix underfitting? Give a concrete example from a project.",
+    "answer_framework": "Use train and validation errors: add signal/features, increase capacity, reduce excessive regularization, or train longer.",
+    "topic": "underfitting",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "underfitting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-042",
+    "domain": "AI/ML",
+    "question": "Explain the bias-variance trade-off with a practical example. Give a concrete example from a project.",
+    "answer_framework": "Define bias and variance, relate them to underfit/overfit, then describe validation-driven model selection.",
+    "topic": "bias variance",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "bias variance"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-043",
+    "domain": "AI/ML",
+    "question": "Compare L1, L2, and Elastic Net regularization. Give a concrete example from a project.",
+    "answer_framework": "State the penalty shape, sparsity behavior, correlated-feature behavior, and when each is useful.",
+    "topic": "regularization",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "regularization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-044",
+    "domain": "AI/ML",
+    "question": "When would you use stratified k-fold cross-validation? Give a concrete example from a project.",
+    "answer_framework": "Explain folds, class-ratio preservation, leakage prevention, and why it is appropriate for imbalanced classification.",
+    "topic": "cross validation",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "cross validation"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-045",
+    "domain": "AI/ML",
+    "question": "Give examples of data leakage in an ML pipeline. Give a concrete example from a project.",
+    "answer_framework": "Mention preprocessing before splitting, target-derived features, duplicate users across folds, and future information.",
+    "topic": "data leakage",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "data leakage"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-046",
+    "domain": "AI/ML",
+    "question": "How would you handle missing values in a production dataset? Give a concrete example from a project.",
+    "answer_framework": "Profile missingness, distinguish MCAR/MAR/MNAR, fit imputers on train only, add indicators, and monitor drift.",
+    "topic": "missing values",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "missing values"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-047",
+    "domain": "AI/ML",
+    "question": "How do outliers affect different models and metrics? Give a concrete example from a project.",
+    "answer_framework": "Explain sensitivity of means, linear models, and distance methods; compare clipping, robust scaling, transformations, and investigation.",
+    "topic": "outliers",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "outliers"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-048",
+    "domain": "AI/ML",
+    "question": "When is feature scaling important? Give a concrete example from a project.",
+    "answer_framework": "Contrast tree models with distance/gradient-based models and explain standardization versus normalization.",
+    "topic": "scaling",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "scaling"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-049",
+    "domain": "AI/ML",
+    "question": "How would you encode high-cardinality categorical variables? Give a concrete example from a project.",
+    "answer_framework": "Compare one-hot, hashing, target encoding with leakage-safe folds, embeddings, and frequency encoding.",
+    "topic": "encoding",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "encoding"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-050",
+    "domain": "AI/ML",
+    "question": "What would you do when the positive class is rare? Give a concrete example from a project.",
+    "answer_framework": "Choose business-aware metrics, resampling or class weights, threshold tuning, calibration, and stratified evaluation.",
+    "topic": "class imbalance",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "class imbalance"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-051",
+    "domain": "AI/ML",
+    "question": "Explain precision, recall, and F1 using an interview-screening example. Give a concrete example from a project.",
+    "answer_framework": "Define false positives/negatives, map costs to the metric, and explain why F1 is a compromise rather than a universal choice.",
+    "topic": "precision recall",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "precision recall"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-052",
+    "domain": "AI/ML",
+    "question": "What does ROC-AUC measure and when can it mislead? Give a concrete example from a project.",
+    "answer_framework": "Describe ranking across thresholds, then note imbalance, precision-recall curves, calibration, and operating-point costs.",
+    "topic": "ROC AUC",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "ROC AUC"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-053",
+    "domain": "AI/ML",
+    "question": "How would you check whether predicted probabilities are calibrated? Give a concrete example from a project.",
+    "answer_framework": "Use reliability diagrams and Brier score; apply Platt scaling or isotonic regression on held-out data.",
+    "topic": "calibration",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "calibration"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-054",
+    "domain": "AI/ML",
+    "question": "Compare MAE, MSE, RMSE, and MAPE. Give a concrete example from a project.",
+    "answer_framework": "Discuss units, outlier sensitivity, asymmetric business costs, and MAPE instability near zero.",
+    "topic": "regression metrics",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "regression metrics"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-055",
+    "domain": "AI/ML",
+    "question": "How do you decide whether a feature is useful? Give a concrete example from a project.",
+    "answer_framework": "Check causal plausibility, availability at inference, leakage, univariate signal, ablation, and validation lift.",
+    "topic": "feature engineering",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "feature engineering"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-056",
+    "domain": "AI/ML",
+    "question": "Why are decision trees prone to overfitting? Give a concrete example from a project.",
+    "answer_framework": "Explain recursive partitioning and high variance, then cover depth limits, pruning, minimum leaf size, and ensembles.",
+    "topic": "trees",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "trees"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-057",
+    "domain": "AI/ML",
+    "question": "Why can random forests generalize better than a single tree? Give a concrete example from a project.",
+    "answer_framework": "Describe bootstrap samples, random feature subsets, variance reduction, out-of-bag estimates, and trade-offs.",
+    "topic": "random forest",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "random forest"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-058",
+    "domain": "AI/ML",
+    "question": "Compare bagging and boosting. Give a concrete example from a project.",
+    "answer_framework": "Bagging trains independent learners to reduce variance; boosting builds sequentially to reduce bias, with different failure modes.",
+    "topic": "boosting",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "boosting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-059",
+    "domain": "AI/ML",
+    "question": "What affects gradient-descent convergence? Give a concrete example from a project.",
+    "answer_framework": "Cover learning rate, feature scale, batch size, curvature, initialization, schedules, and stopping criteria.",
+    "topic": "gradient descent",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "gradient descent"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-060",
+    "domain": "AI/ML",
+    "question": "Why is logistic regression useful despite being simple? Give a concrete example from a project.",
+    "answer_framework": "Explain probabilistic linear decision boundaries, interpretability, regularization, calibration, and strong baselines.",
+    "topic": "logistic regression",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "logistic regression"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-061",
+    "domain": "AI/ML",
+    "question": "When might an SVM be a good choice? Give a concrete example from a project.",
+    "answer_framework": "Mention margin maximization, kernels for nonlinear boundaries, scaling needs, and limits with very large datasets.",
+    "topic": "SVM",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "SVM"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-062",
+    "domain": "AI/ML",
+    "question": "How would you evaluate a clustering result without labels? Give a concrete example from a project.",
+    "answer_framework": "Use silhouette or stability plus domain validation; explain that a metric cannot replace meaningful cluster use.",
+    "topic": "clustering",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "clustering"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-063",
+    "domain": "AI/ML",
+    "question": "What does PCA optimize and what information can it lose? Give a concrete example from a project.",
+    "answer_framework": "Describe orthogonal variance-maximizing components, preprocessing, dimensionality reduction, and interpretability trade-offs.",
+    "topic": "PCA",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "PCA"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-064",
+    "domain": "AI/ML",
+    "question": "How would you evaluate a recommender system offline and online? Give a concrete example from a project.",
+    "answer_framework": "Separate ranking metrics, coverage/diversity/novelty, counterfactual limits, and A/B testing with guardrails.",
+    "topic": "recommendation",
+    "difficulty": "hard",
+    "tags": [
+      "ai",
+      "ml",
+      "recommendation"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-065",
+    "domain": "AI/ML",
+    "question": "How would you handle class imbalance in an image classifier? Give a concrete example from a project.",
+    "answer_framework": "Use stratified splits, augmentation, weighted loss, per-class metrics, thresholding, and check minority-image quality.",
+    "topic": "computer vision",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "computer vision"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-066",
+    "domain": "AI/ML",
+    "question": "Why is transfer learning useful for computer vision? Give a concrete example from a project.",
+    "answer_framework": "Reuse pretrained visual features, freeze/unfreeze progressively, adapt augmentation, and validate domain mismatch.",
+    "topic": "transfer learning",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "transfer learning"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-067",
+    "domain": "AI/ML",
+    "question": "What is an embedding and how would you use it in search? Give a concrete example from a project.",
+    "answer_framework": "Explain dense vectors encoding similarity, nearest-neighbor retrieval, normalization, evaluation queries, and freshness.",
+    "topic": "embeddings",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "embeddings"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-068",
+    "domain": "AI/ML",
+    "question": "What is the difference between an LLM and a traditional supervised model? Give a concrete example from a project.",
+    "answer_framework": "Contrast objective, open-ended generation, in-context learning, evaluation, grounding, and safety controls.",
+    "topic": "LLM",
+    "difficulty": "easy",
+    "tags": [
+      "ai",
+      "ml",
+      "LLM"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-069",
+    "domain": "AI/ML",
+    "question": "Why use retrieval-augmented generation instead of only prompting an LLM? Give a concrete example from a project.",
+    "answer_framework": "Ground responses in current/domain documents, reduce unsupported claims, expose sources, and manage retrieval quality.",
+    "topic": "RAG",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "RAG"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "ai/-070",
+    "domain": "AI/ML",
+    "question": "How would you choose chunk size for a RAG system? Give a concrete example from a project.",
+    "answer_framework": "Balance semantic completeness, retrieval precision, context budget, overlap, document structure, and measure recall.",
+    "topic": "chunking",
+    "difficulty": "medium",
+    "tags": [
+      "ai",
+      "ml",
+      "chunking"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-interview-questions/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-001",
+    "domain": "Software/Backend",
+    "question": "Explain the difference between GET, POST, PUT, PATCH, and DELETE.",
+    "answer_framework": "Map each verb to intent and idempotency, then mention validation, status codes, and safe retries.",
+    "topic": "HTTP",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "HTTP"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-002",
+    "domain": "Software/Backend",
+    "question": "What makes an API RESTful enough for production use?",
+    "answer_framework": "Discuss resource-oriented URLs, statelessness, representations, HTTP semantics, pagination, errors, and versioning.",
+    "topic": "REST",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "REST"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-003",
+    "domain": "Software/Backend",
+    "question": "Which HTTP status codes would you return for common API failures?",
+    "answer_framework": "Use 400/422 for invalid input, 401/403 for auth, 404 for missing resources, 409 for conflicts, and 5xx for server faults.",
+    "topic": "status codes",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "status codes"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-004",
+    "domain": "Software/Backend",
+    "question": "Compare session-based authentication with JWTs.",
+    "answer_framework": "Contrast server-side session state with signed claims, revocation, rotation, storage, and browser security.",
+    "topic": "authentication",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "authentication"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-005",
+    "domain": "Software/Backend",
+    "question": "What is the difference between authentication and authorization?",
+    "answer_framework": "Authentication establishes identity; authorization checks permitted actions against roles, scopes, and resource ownership.",
+    "topic": "authorization",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "authorization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-006",
+    "domain": "Software/Backend",
+    "question": "How would you find and fix a slow SQL query?",
+    "answer_framework": "Inspect query plan and indexes, reduce scanned rows, avoid N+1, verify cardinality, and measure before/after.",
+    "topic": "SQL",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "SQL"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-007",
+    "domain": "Software/Backend",
+    "question": "What are the trade-offs of database indexes?",
+    "answer_framework": "They accelerate reads but add storage and write/update cost; choose selective, workload-driven indexes.",
+    "topic": "indexes",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "indexes"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-008",
+    "domain": "Software/Backend",
+    "question": "Explain database transactions and isolation levels.",
+    "answer_framework": "Use ACID, dirty/non-repeatable/phantom reads, and choose the lowest safe isolation with retry handling.",
+    "topic": "transactions",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "transactions"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-009",
+    "domain": "Software/Backend",
+    "question": "When would you denormalize a relational schema?",
+    "answer_framework": "Start normalized for consistency; denormalize for measured read latency with ownership, refresh, and consistency plans.",
+    "topic": "normalization",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "normalization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-010",
+    "domain": "Software/Backend",
+    "question": "When would you choose a document store over a relational database?",
+    "answer_framework": "Base it on access patterns, schema flexibility, transactions, relationships, consistency, and operational constraints.",
+    "topic": "NoSQL",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "NoSQL"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-011",
+    "domain": "Software/Backend",
+    "question": "Design a cache for a read-heavy endpoint.",
+    "answer_framework": "Choose key/TTL/eviction, invalidation, stampede protection, stale behavior, and metrics; never cache sensitive data casually.",
+    "topic": "caching",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "caching"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-012",
+    "domain": "Software/Backend",
+    "question": "What problems can Redis solve and what can go wrong?",
+    "answer_framework": "Mention cache, rate limits, queues, and locks; cover eviction, persistence, hot keys, split brain, and durability limits.",
+    "topic": "Redis",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "Redis"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-013",
+    "domain": "Software/Backend",
+    "question": "Why use a message queue between services?",
+    "answer_framework": "Decouple producers and consumers, absorb spikes, retry failures, and accept eventual consistency with idempotency.",
+    "topic": "queues",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "queues"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-014",
+    "domain": "Software/Backend",
+    "question": "How would you make a payment-like API idempotent?",
+    "answer_framework": "Require a client key, persist request/result atomically, replay the same outcome, and define expiry/conflict semantics.",
+    "topic": "idempotency",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "idempotency"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-015",
+    "domain": "Software/Backend",
+    "question": "How would you scale a web service horizontally?",
+    "answer_framework": "Keep app instances stateless, externalize session/state, load-balance, pool DB connections, and monitor bottlenecks.",
+    "topic": "scaling",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "scaling"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-016",
+    "domain": "Software/Backend",
+    "question": "What is the role of a load balancer?",
+    "answer_framework": "Distribute traffic, perform health checks, terminate TLS, route by policy, and avoid sending traffic to unhealthy nodes.",
+    "topic": "load balancing",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "load balancing"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-017",
+    "domain": "Software/Backend",
+    "question": "Design a rate limiter for a public API.",
+    "answer_framework": "Choose fixed/sliding/token-bucket strategy, identity key, storage, response headers, burst rules, and failure mode.",
+    "topic": "rate limiting",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "rate limiting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-018",
+    "domain": "Software/Backend",
+    "question": "What should you log and measure in a backend service?",
+    "answer_framework": "Use structured logs, latency/error/traffic/saturation metrics, traces, correlation IDs, and redaction.",
+    "topic": "observability",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "observability"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-019",
+    "domain": "Software/Backend",
+    "question": "Explain timeouts, retries, and circuit breakers.",
+    "answer_framework": "Set bounded timeouts, exponential backoff with jitter, retry only safe/transient failures, and trip breakers to prevent cascades.",
+    "topic": "reliability",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "reliability"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-020",
+    "domain": "Software/Backend",
+    "question": "How do you prevent SQL injection and XSS?",
+    "answer_framework": "Use parameterized queries and output encoding, validate input, CSP, secure cookies, and defense in depth.",
+    "topic": "security",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "security"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-021",
+    "domain": "Software/Backend",
+    "question": "How should production secrets be managed?",
+    "answer_framework": "Use a secret manager or platform secrets, least privilege, rotation, no logs or commits, and environment-specific access.",
+    "topic": "secrets",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "secrets"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-022",
+    "domain": "Software/Backend",
+    "question": "What belongs in a production Dockerfile?",
+    "answer_framework": "Use a small pinned base, multi-stage build, non-root user, health check, deterministic dependencies, and no secrets.",
+    "topic": "Docker",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "Docker"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-023",
+    "domain": "Software/Backend",
+    "question": "What checks should run before deploying an API?",
+    "answer_framework": "Run formatting, linting, unit/integration tests, security scans, migrations checks, and safe rollout validation.",
+    "topic": "CI/CD",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "CI/CD"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-024",
+    "domain": "Software/Backend",
+    "question": "What does asynchronous I/O improve in a server?",
+    "answer_framework": "It prevents waiting on I/O from blocking workers, but CPU-bound work still needs processes/workers or a job queue.",
+    "topic": "async",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "async"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-025",
+    "domain": "Software/Backend",
+    "question": "How would you structure a maintainable Python service?",
+    "answer_framework": "Separate configuration, domain logic, adapters, API routes, tests, typed interfaces, and dependency boundaries.",
+    "topic": "Python",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "Python"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-026",
+    "domain": "Software/Backend",
+    "question": "How does Node.js handle many concurrent requests?",
+    "answer_framework": "Explain the event loop and non-blocking I/O, then call out CPU-bound work and worker processes.",
+    "topic": "Node",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "Node"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-027",
+    "domain": "Software/Backend",
+    "question": "How can an API evolve without breaking clients?",
+    "answer_framework": "Prefer additive changes, deprecations, compatibility tests, version policy, and explicit migration communication.",
+    "topic": "API versioning",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "API versioning"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-028",
+    "domain": "Software/Backend",
+    "question": "Compare offset and cursor pagination.",
+    "answer_framework": "Offset is simple but unstable/slow at depth; cursor pagination is stable and efficient with ordered indexed keys.",
+    "topic": "pagination",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "pagination"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-029",
+    "domain": "Software/Backend",
+    "question": "How would you safely handle user-uploaded files?",
+    "answer_framework": "Limit size/type, scan content, store outside web root, randomize names, authorize access, and avoid trusting extensions.",
+    "topic": "file uploads",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "file uploads"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-030",
+    "domain": "Software/Backend",
+    "question": "How would you process an incoming webhook reliably?",
+    "answer_framework": "Verify signature, deduplicate, acknowledge quickly, enqueue work, retry safely, and provide observability.",
+    "topic": "webhooks",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "webhooks"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-031",
+    "domain": "Software/Backend",
+    "question": "Design a URL-shortening service at a high level.",
+    "answer_framework": "Clarify scale and consistency, generate unique IDs, store mappings, cache hot redirects, and handle abuse/analytics.",
+    "topic": "system design",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "system design"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-032",
+    "domain": "Software/Backend",
+    "question": "Design a notification service.",
+    "answer_framework": "Separate preference, fan-out, queue, channel adapters, retries, deduplication, rate limits, and delivery status.",
+    "topic": "system design",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "system design"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-033",
+    "domain": "Software/Backend",
+    "question": "What is the difference between unit, integration, and end-to-end tests?",
+    "answer_framework": "Explain scope, speed, failure isolation, realistic dependencies, and a balanced test pyramid.",
+    "topic": "testing",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "testing"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-034",
+    "domain": "Software/Backend",
+    "question": "Walk through how you debug a production incident.",
+    "answer_framework": "Stabilize impact, inspect signals and recent changes, reproduce safely, mitigate, communicate, and write a blameless postmortem.",
+    "topic": "debugging",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "debugging"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-035",
+    "domain": "Software/Backend",
+    "question": "What race conditions can occur in a web application?",
+    "answer_framework": "Identify shared state and check-then-act bugs, then use transactions, locks, atomic operations, or idempotency.",
+    "topic": "concurrency",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "concurrency"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-036",
+    "domain": "Software/Backend",
+    "question": "Explain the difference between GET, POST, PUT, PATCH, and DELETE. Include one operational trade-off.",
+    "answer_framework": "Map each verb to intent and idempotency, then mention validation, status codes, and safe retries.",
+    "topic": "HTTP",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "HTTP"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-037",
+    "domain": "Software/Backend",
+    "question": "What makes an API RESTful enough for production use? Include one operational trade-off.",
+    "answer_framework": "Discuss resource-oriented URLs, statelessness, representations, HTTP semantics, pagination, errors, and versioning.",
+    "topic": "REST",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "REST"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-038",
+    "domain": "Software/Backend",
+    "question": "Which HTTP status codes would you return for common API failures? Include one operational trade-off.",
+    "answer_framework": "Use 400/422 for invalid input, 401/403 for auth, 404 for missing resources, 409 for conflicts, and 5xx for server faults.",
+    "topic": "status codes",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "status codes"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-039",
+    "domain": "Software/Backend",
+    "question": "Compare session-based authentication with JWTs. Include one operational trade-off.",
+    "answer_framework": "Contrast server-side session state with signed claims, revocation, rotation, storage, and browser security.",
+    "topic": "authentication",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "authentication"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-040",
+    "domain": "Software/Backend",
+    "question": "What is the difference between authentication and authorization? Include one operational trade-off.",
+    "answer_framework": "Authentication establishes identity; authorization checks permitted actions against roles, scopes, and resource ownership.",
+    "topic": "authorization",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "authorization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-041",
+    "domain": "Software/Backend",
+    "question": "How would you find and fix a slow SQL query? Include one operational trade-off.",
+    "answer_framework": "Inspect query plan and indexes, reduce scanned rows, avoid N+1, verify cardinality, and measure before/after.",
+    "topic": "SQL",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "SQL"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-042",
+    "domain": "Software/Backend",
+    "question": "What are the trade-offs of database indexes? Include one operational trade-off.",
+    "answer_framework": "They accelerate reads but add storage and write/update cost; choose selective, workload-driven indexes.",
+    "topic": "indexes",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "indexes"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-043",
+    "domain": "Software/Backend",
+    "question": "Explain database transactions and isolation levels. Include one operational trade-off.",
+    "answer_framework": "Use ACID, dirty/non-repeatable/phantom reads, and choose the lowest safe isolation with retry handling.",
+    "topic": "transactions",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "transactions"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-044",
+    "domain": "Software/Backend",
+    "question": "When would you denormalize a relational schema? Include one operational trade-off.",
+    "answer_framework": "Start normalized for consistency; denormalize for measured read latency with ownership, refresh, and consistency plans.",
+    "topic": "normalization",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "normalization"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-045",
+    "domain": "Software/Backend",
+    "question": "When would you choose a document store over a relational database? Include one operational trade-off.",
+    "answer_framework": "Base it on access patterns, schema flexibility, transactions, relationships, consistency, and operational constraints.",
+    "topic": "NoSQL",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "NoSQL"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-046",
+    "domain": "Software/Backend",
+    "question": "Design a cache for a read-heavy endpoint. Include one operational trade-off.",
+    "answer_framework": "Choose key/TTL/eviction, invalidation, stampede protection, stale behavior, and metrics; never cache sensitive data casually.",
+    "topic": "caching",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "caching"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-047",
+    "domain": "Software/Backend",
+    "question": "What problems can Redis solve and what can go wrong? Include one operational trade-off.",
+    "answer_framework": "Mention cache, rate limits, queues, and locks; cover eviction, persistence, hot keys, split brain, and durability limits.",
+    "topic": "Redis",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "Redis"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-048",
+    "domain": "Software/Backend",
+    "question": "Why use a message queue between services? Include one operational trade-off.",
+    "answer_framework": "Decouple producers and consumers, absorb spikes, retry failures, and accept eventual consistency with idempotency.",
+    "topic": "queues",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "queues"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-049",
+    "domain": "Software/Backend",
+    "question": "How would you make a payment-like API idempotent? Include one operational trade-off.",
+    "answer_framework": "Require a client key, persist request/result atomically, replay the same outcome, and define expiry/conflict semantics.",
+    "topic": "idempotency",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "idempotency"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-050",
+    "domain": "Software/Backend",
+    "question": "How would you scale a web service horizontally? Include one operational trade-off.",
+    "answer_framework": "Keep app instances stateless, externalize session/state, load-balance, pool DB connections, and monitor bottlenecks.",
+    "topic": "scaling",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "scaling"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-051",
+    "domain": "Software/Backend",
+    "question": "What is the role of a load balancer? Include one operational trade-off.",
+    "answer_framework": "Distribute traffic, perform health checks, terminate TLS, route by policy, and avoid sending traffic to unhealthy nodes.",
+    "topic": "load balancing",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "load balancing"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-052",
+    "domain": "Software/Backend",
+    "question": "Design a rate limiter for a public API. Include one operational trade-off.",
+    "answer_framework": "Choose fixed/sliding/token-bucket strategy, identity key, storage, response headers, burst rules, and failure mode.",
+    "topic": "rate limiting",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "rate limiting"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-053",
+    "domain": "Software/Backend",
+    "question": "What should you log and measure in a backend service? Include one operational trade-off.",
+    "answer_framework": "Use structured logs, latency/error/traffic/saturation metrics, traces, correlation IDs, and redaction.",
+    "topic": "observability",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "observability"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-054",
+    "domain": "Software/Backend",
+    "question": "Explain timeouts, retries, and circuit breakers. Include one operational trade-off.",
+    "answer_framework": "Set bounded timeouts, exponential backoff with jitter, retry only safe/transient failures, and trip breakers to prevent cascades.",
+    "topic": "reliability",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "reliability"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-055",
+    "domain": "Software/Backend",
+    "question": "How do you prevent SQL injection and XSS? Include one operational trade-off.",
+    "answer_framework": "Use parameterized queries and output encoding, validate input, CSP, secure cookies, and defense in depth.",
+    "topic": "security",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "security"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-056",
+    "domain": "Software/Backend",
+    "question": "How should production secrets be managed? Include one operational trade-off.",
+    "answer_framework": "Use a secret manager or platform secrets, least privilege, rotation, no logs or commits, and environment-specific access.",
+    "topic": "secrets",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "secrets"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-057",
+    "domain": "Software/Backend",
+    "question": "What belongs in a production Dockerfile? Include one operational trade-off.",
+    "answer_framework": "Use a small pinned base, multi-stage build, non-root user, health check, deterministic dependencies, and no secrets.",
+    "topic": "Docker",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "Docker"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-058",
+    "domain": "Software/Backend",
+    "question": "What checks should run before deploying an API? Include one operational trade-off.",
+    "answer_framework": "Run formatting, linting, unit/integration tests, security scans, migrations checks, and safe rollout validation.",
+    "topic": "CI/CD",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "CI/CD"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-059",
+    "domain": "Software/Backend",
+    "question": "What does asynchronous I/O improve in a server? Include one operational trade-off.",
+    "answer_framework": "It prevents waiting on I/O from blocking workers, but CPU-bound work still needs processes/workers or a job queue.",
+    "topic": "async",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "async"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-060",
+    "domain": "Software/Backend",
+    "question": "How would you structure a maintainable Python service? Include one operational trade-off.",
+    "answer_framework": "Separate configuration, domain logic, adapters, API routes, tests, typed interfaces, and dependency boundaries.",
+    "topic": "Python",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "Python"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-061",
+    "domain": "Software/Backend",
+    "question": "How does Node.js handle many concurrent requests? Include one operational trade-off.",
+    "answer_framework": "Explain the event loop and non-blocking I/O, then call out CPU-bound work and worker processes.",
+    "topic": "Node",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "Node"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-062",
+    "domain": "Software/Backend",
+    "question": "How can an API evolve without breaking clients? Include one operational trade-off.",
+    "answer_framework": "Prefer additive changes, deprecations, compatibility tests, version policy, and explicit migration communication.",
+    "topic": "API versioning",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "API versioning"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-063",
+    "domain": "Software/Backend",
+    "question": "Compare offset and cursor pagination. Include one operational trade-off.",
+    "answer_framework": "Offset is simple but unstable/slow at depth; cursor pagination is stable and efficient with ordered indexed keys.",
+    "topic": "pagination",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "pagination"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-064",
+    "domain": "Software/Backend",
+    "question": "How would you safely handle user-uploaded files? Include one operational trade-off.",
+    "answer_framework": "Limit size/type, scan content, store outside web root, randomize names, authorize access, and avoid trusting extensions.",
+    "topic": "file uploads",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "file uploads"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-065",
+    "domain": "Software/Backend",
+    "question": "How would you process an incoming webhook reliably? Include one operational trade-off.",
+    "answer_framework": "Verify signature, deduplicate, acknowledge quickly, enqueue work, retry safely, and provide observability.",
+    "topic": "webhooks",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "webhooks"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-066",
+    "domain": "Software/Backend",
+    "question": "Design a URL-shortening service at a high level. Include one operational trade-off.",
+    "answer_framework": "Clarify scale and consistency, generate unique IDs, store mappings, cache hot redirects, and handle abuse/analytics.",
+    "topic": "system design",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "system design"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-067",
+    "domain": "Software/Backend",
+    "question": "Design a notification service. Include one operational trade-off.",
+    "answer_framework": "Separate preference, fan-out, queue, channel adapters, retries, deduplication, rate limits, and delivery status.",
+    "topic": "system design",
+    "difficulty": "hard",
+    "tags": [
+      "software",
+      "backend",
+      "system design"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-068",
+    "domain": "Software/Backend",
+    "question": "What is the difference between unit, integration, and end-to-end tests? Include one operational trade-off.",
+    "answer_framework": "Explain scope, speed, failure isolation, realistic dependencies, and a balanced test pyramid.",
+    "topic": "testing",
+    "difficulty": "easy",
+    "tags": [
+      "software",
+      "backend",
+      "testing"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-069",
+    "domain": "Software/Backend",
+    "question": "Walk through how you debug a production incident. Include one operational trade-off.",
+    "answer_framework": "Stabilize impact, inspect signals and recent changes, reproduce safely, mitigate, communicate, and write a blameless postmortem.",
+    "topic": "debugging",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "debugging"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "sof-070",
+    "domain": "Software/Backend",
+    "question": "What race conditions can occur in a web application? Include one operational trade-off.",
+    "answer_framework": "Identify shared state and check-then-act bugs, then use transactions, locks, atomic operations, or idempotency.",
+    "topic": "concurrency",
+    "difficulty": "medium",
+    "tags": [
+      "software",
+      "backend",
+      "concurrency"
+    ],
+    "source_url": "https://www.geeksforgeeks.org/interview-prep/backend-developer-interview-questions-and-answers/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-001",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a project you are most proud of.",
+    "answer_framework": "Use STAR: context and goal, your specific actions, measurable result, and what you learned.",
+    "topic": "projects",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "projects",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-002",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you solved a difficult problem.",
+    "answer_framework": "Frame the ambiguity, options considered, decision criteria, action, and measurable outcome.",
+    "topic": "problem-solving",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "problem-solving",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-003",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you failed.",
+    "answer_framework": "Be honest, own your part, explain the impact, corrective action, and the changed behavior/result.",
+    "topic": "learning",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "learning",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-004",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you worked in a team.",
+    "answer_framework": "Use I-statements: team context, your contribution, collaboration behavior, outcome, and reflection.",
+    "topic": "teamwork",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "teamwork",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-005",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a conflict with a teammate.",
+    "answer_framework": "Explain the shared goal, listen-first approach, evidence-based resolution, and relationship/outcome.",
+    "topic": "conflict",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "conflict",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-006",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you demonstrated leadership without authority.",
+    "answer_framework": "Show initiative, alignment, delegation or influence, measurable result, and what you would repeat.",
+    "topic": "leadership",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "leadership",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-007",
+    "domain": "Behavioral/HR",
+    "question": "How do you prioritize competing deadlines?",
+    "answer_framework": "Describe impact/urgency assessment, stakeholder alignment, explicit trade-offs, execution, and communication.",
+    "topic": "prioritization",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "prioritization",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-008",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time requirements changed late.",
+    "answer_framework": "Explain the change, impact analysis, re-planning, communication, and delivery result.",
+    "topic": "adaptability",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "adaptability",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-009",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you received difficult feedback.",
+    "answer_framework": "State the feedback without defensiveness, action taken, evidence of change, and ongoing practice.",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "feedback",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-010",
+    "domain": "Behavioral/HR",
+    "question": "How do you handle ambiguity?",
+    "answer_framework": "Clarify the goal, state assumptions, create a small experiment, surface risks, and iterate with stakeholders.",
+    "topic": "ambiguity",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "ambiguity",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-011",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you disagreed with a decision.",
+    "answer_framework": "Respectfully present evidence, seek context, propose alternatives, commit once decided, and reflect.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-012",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you had to learn something quickly.",
+    "answer_framework": "Describe the gap, focused learning plan, application, validation, and result.",
+    "topic": "learning",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "learning",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-013",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you improved a process.",
+    "answer_framework": "Quantify baseline pain, diagnose root cause, implement a practical change, measure adoption and outcome.",
+    "topic": "ownership",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "ownership",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-014",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you made a mistake.",
+    "answer_framework": "Own it, explain how you detected and contained it, prevent recurrence, and quantify recovery.",
+    "topic": "accountability",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "accountability",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-015",
+    "domain": "Behavioral/HR",
+    "question": "What motivates you in technical work?",
+    "answer_framework": "Connect intrinsic motivation to the role, user impact, learning, and an authentic example.",
+    "topic": "motivation",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "motivation",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-016",
+    "domain": "Behavioral/HR",
+    "question": "What is your biggest strength?",
+    "answer_framework": "Name one relevant strength, provide evidence, describe its impact, and avoid unsupported superlatives.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-017",
+    "domain": "Behavioral/HR",
+    "question": "What is an area you are improving?",
+    "answer_framework": "Choose a real but manageable gap, show a concrete improvement system, and provide progress evidence.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-018",
+    "domain": "Behavioral/HR",
+    "question": "Why this role and company?",
+    "answer_framework": "Connect company problem, role responsibilities, your evidence, and a specific reason the timing fits.",
+    "topic": "motivation",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "motivation",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-019",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you advocated for quality.",
+    "answer_framework": "Describe the risk, practical quality action, trade-off, stakeholder handling, and outcome.",
+    "topic": "quality",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "quality",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-020",
+    "domain": "Behavioral/HR",
+    "question": "How do you explain technical concepts to non-technical people?",
+    "answer_framework": "Start from audience goals, use plain language/analogy, check understanding, and tailor detail.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-021",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you used data to make a decision.",
+    "answer_framework": "State the decision, data quality and alternatives, analysis, action, and outcome with caveats.",
+    "topic": "analytical-thinking",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "analytical-thinking",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-022",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you went beyond your assigned task.",
+    "answer_framework": "Show user/team need, responsible initiative, alignment, outcome, and boundaries.",
+    "topic": "ownership",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "ownership",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-023",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you managed stress.",
+    "answer_framework": "Give a specific high-pressure context, prioritization and communication actions, result, and sustainable lesson.",
+    "topic": "resilience",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "resilience",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-024",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you helped someone else succeed.",
+    "answer_framework": "Identify their need, coaching or enablement action, their outcome, and what you learned about collaboration.",
+    "topic": "teamwork",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "teamwork",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-025",
+    "domain": "Behavioral/HR",
+    "question": "How do you respond when you do not know an answer?",
+    "answer_framework": "Be transparent, decompose the question, state what you know, propose how to verify, and follow through.",
+    "topic": "integrity",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "integrity",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-026",
+    "domain": "Behavioral/HR",
+    "question": "Describe an ethical dilemma you faced.",
+    "answer_framework": "Clarify stakeholders and principles, escalate appropriately, choose a defensible action, and reflect on impact.",
+    "topic": "integrity",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "integrity",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-027",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you balanced speed and quality.",
+    "answer_framework": "Make risk explicit, define minimum safe quality, ship incrementally, and measure/revisit.",
+    "topic": "judgment",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "judgment",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-028",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you handled an unresponsive stakeholder.",
+    "answer_framework": "Use respectful follow-ups, clarify the decision needed, offer options, escalate with context, and protect delivery.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-029",
+    "domain": "Behavioral/HR",
+    "question": "What kind of manager helps you do your best work?",
+    "answer_framework": "Describe working preferences, feedback cadence, autonomy, and how you adapt to different styles.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-030",
+    "domain": "Behavioral/HR",
+    "question": "What would your teammates say about you?",
+    "answer_framework": "Use two evidence-backed traits, one balanced growth area, and link them to collaboration.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-031",
+    "domain": "Behavioral/HR",
+    "question": "How do you prepare for an important presentation?",
+    "answer_framework": "Define audience/outcome, structure narrative, rehearse, test risks, and invite questions.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-032",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you changed your mind.",
+    "answer_framework": "Describe new evidence, how you updated your view, decision impact, and intellectual humility.",
+    "topic": "learning",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "learning",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-033",
+    "domain": "Behavioral/HR",
+    "question": "How do you make sure your work is inclusive and accessible?",
+    "answer_framework": "Consider user diversity, accessible defaults, testing with varied users, and feedback loops.",
+    "topic": "values",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "values",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-034",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you had to say no.",
+    "answer_framework": "Explain the request, constraints, alternatives, respectful communication, and protected outcome.",
+    "topic": "judgment",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "judgment",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-035",
+    "domain": "Behavioral/HR",
+    "question": "Where do you want to grow in the next two years?",
+    "answer_framework": "Choose role-relevant skills, a concrete plan, and how you will create value while learning.",
+    "topic": "motivation",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "motivation",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-036",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a project you are most proud of. Give a concise, evidence-backed answer.",
+    "answer_framework": "Use STAR: context and goal, your specific actions, measurable result, and what you learned.",
+    "topic": "projects",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "projects",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-037",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you solved a difficult problem. Give a concise, evidence-backed answer.",
+    "answer_framework": "Frame the ambiguity, options considered, decision criteria, action, and measurable outcome.",
+    "topic": "problem-solving",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "problem-solving",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-038",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you failed. Give a concise, evidence-backed answer.",
+    "answer_framework": "Be honest, own your part, explain the impact, corrective action, and the changed behavior/result.",
+    "topic": "learning",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "learning",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-039",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you worked in a team. Give a concise, evidence-backed answer.",
+    "answer_framework": "Use I-statements: team context, your contribution, collaboration behavior, outcome, and reflection.",
+    "topic": "teamwork",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "teamwork",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-040",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a conflict with a teammate. Give a concise, evidence-backed answer.",
+    "answer_framework": "Explain the shared goal, listen-first approach, evidence-based resolution, and relationship/outcome.",
+    "topic": "conflict",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "conflict",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-041",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you demonstrated leadership without authority. Give a concise, evidence-backed answer.",
+    "answer_framework": "Show initiative, alignment, delegation or influence, measurable result, and what you would repeat.",
+    "topic": "leadership",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "leadership",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-042",
+    "domain": "Behavioral/HR",
+    "question": "How do you prioritize competing deadlines? Give a concise, evidence-backed answer.",
+    "answer_framework": "Describe impact/urgency assessment, stakeholder alignment, explicit trade-offs, execution, and communication.",
+    "topic": "prioritization",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "prioritization",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-043",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time requirements changed late. Give a concise, evidence-backed answer.",
+    "answer_framework": "Explain the change, impact analysis, re-planning, communication, and delivery result.",
+    "topic": "adaptability",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "adaptability",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-044",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you received difficult feedback. Give a concise, evidence-backed answer.",
+    "answer_framework": "State the feedback without defensiveness, action taken, evidence of change, and ongoing practice.",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "feedback",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-045",
+    "domain": "Behavioral/HR",
+    "question": "How do you handle ambiguity? Give a concise, evidence-backed answer.",
+    "answer_framework": "Clarify the goal, state assumptions, create a small experiment, surface risks, and iterate with stakeholders.",
+    "topic": "ambiguity",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "ambiguity",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-046",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you disagreed with a decision. Give a concise, evidence-backed answer.",
+    "answer_framework": "Respectfully present evidence, seek context, propose alternatives, commit once decided, and reflect.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-047",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you had to learn something quickly. Give a concise, evidence-backed answer.",
+    "answer_framework": "Describe the gap, focused learning plan, application, validation, and result.",
+    "topic": "learning",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "learning",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-048",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you improved a process. Give a concise, evidence-backed answer.",
+    "answer_framework": "Quantify baseline pain, diagnose root cause, implement a practical change, measure adoption and outcome.",
+    "topic": "ownership",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "ownership",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-049",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you made a mistake. Give a concise, evidence-backed answer.",
+    "answer_framework": "Own it, explain how you detected and contained it, prevent recurrence, and quantify recovery.",
+    "topic": "accountability",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "accountability",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-050",
+    "domain": "Behavioral/HR",
+    "question": "What motivates you in technical work? Give a concise, evidence-backed answer.",
+    "answer_framework": "Connect intrinsic motivation to the role, user impact, learning, and an authentic example.",
+    "topic": "motivation",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "motivation",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-051",
+    "domain": "Behavioral/HR",
+    "question": "What is your biggest strength? Give a concise, evidence-backed answer.",
+    "answer_framework": "Name one relevant strength, provide evidence, describe its impact, and avoid unsupported superlatives.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-052",
+    "domain": "Behavioral/HR",
+    "question": "What is an area you are improving? Give a concise, evidence-backed answer.",
+    "answer_framework": "Choose a real but manageable gap, show a concrete improvement system, and provide progress evidence.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-053",
+    "domain": "Behavioral/HR",
+    "question": "Why this role and company? Give a concise, evidence-backed answer.",
+    "answer_framework": "Connect company problem, role responsibilities, your evidence, and a specific reason the timing fits.",
+    "topic": "motivation",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "motivation",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-054",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you advocated for quality. Give a concise, evidence-backed answer.",
+    "answer_framework": "Describe the risk, practical quality action, trade-off, stakeholder handling, and outcome.",
+    "topic": "quality",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "quality",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-055",
+    "domain": "Behavioral/HR",
+    "question": "How do you explain technical concepts to non-technical people? Give a concise, evidence-backed answer.",
+    "answer_framework": "Start from audience goals, use plain language/analogy, check understanding, and tailor detail.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-056",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you used data to make a decision. Give a concise, evidence-backed answer.",
+    "answer_framework": "State the decision, data quality and alternatives, analysis, action, and outcome with caveats.",
+    "topic": "analytical-thinking",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "analytical-thinking",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-057",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you went beyond your assigned task. Give a concise, evidence-backed answer.",
+    "answer_framework": "Show user/team need, responsible initiative, alignment, outcome, and boundaries.",
+    "topic": "ownership",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "ownership",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-058",
+    "domain": "Behavioral/HR",
+    "question": "Describe a time you managed stress. Give a concise, evidence-backed answer.",
+    "answer_framework": "Give a specific high-pressure context, prioritization and communication actions, result, and sustainable lesson.",
+    "topic": "resilience",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "resilience",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-059",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you helped someone else succeed. Give a concise, evidence-backed answer.",
+    "answer_framework": "Identify their need, coaching or enablement action, their outcome, and what you learned about collaboration.",
+    "topic": "teamwork",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "teamwork",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-060",
+    "domain": "Behavioral/HR",
+    "question": "How do you respond when you do not know an answer? Give a concise, evidence-backed answer.",
+    "answer_framework": "Be transparent, decompose the question, state what you know, propose how to verify, and follow through.",
+    "topic": "integrity",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "integrity",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-061",
+    "domain": "Behavioral/HR",
+    "question": "Describe an ethical dilemma you faced. Give a concise, evidence-backed answer.",
+    "answer_framework": "Clarify stakeholders and principles, escalate appropriately, choose a defensible action, and reflect on impact.",
+    "topic": "integrity",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "integrity",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-062",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you balanced speed and quality. Give a concise, evidence-backed answer.",
+    "answer_framework": "Make risk explicit, define minimum safe quality, ship incrementally, and measure/revisit.",
+    "topic": "judgment",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "judgment",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-063",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you handled an unresponsive stakeholder. Give a concise, evidence-backed answer.",
+    "answer_framework": "Use respectful follow-ups, clarify the decision needed, offer options, escalate with context, and protect delivery.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-064",
+    "domain": "Behavioral/HR",
+    "question": "What kind of manager helps you do your best work? Give a concise, evidence-backed answer.",
+    "answer_framework": "Describe working preferences, feedback cadence, autonomy, and how you adapt to different styles.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-065",
+    "domain": "Behavioral/HR",
+    "question": "What would your teammates say about you? Give a concise, evidence-backed answer.",
+    "answer_framework": "Use two evidence-backed traits, one balanced growth area, and link them to collaboration.",
+    "topic": "self-awareness",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "self-awareness",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-066",
+    "domain": "Behavioral/HR",
+    "question": "How do you prepare for an important presentation? Give a concise, evidence-backed answer.",
+    "answer_framework": "Define audience/outcome, structure narrative, rehearse, test risks, and invite questions.",
+    "topic": "communication",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "communication",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-067",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you changed your mind. Give a concise, evidence-backed answer.",
+    "answer_framework": "Describe new evidence, how you updated your view, decision impact, and intellectual humility.",
+    "topic": "learning",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "learning",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-068",
+    "domain": "Behavioral/HR",
+    "question": "How do you make sure your work is inclusive and accessible? Give a concise, evidence-backed answer.",
+    "answer_framework": "Consider user diversity, accessible defaults, testing with varied users, and feedback loops.",
+    "topic": "values",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "values",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-069",
+    "domain": "Behavioral/HR",
+    "question": "Tell me about a time you had to say no. Give a concise, evidence-backed answer.",
+    "answer_framework": "Explain the request, constraints, alternatives, respectful communication, and protected outcome.",
+    "topic": "judgment",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "judgment",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  },
+  {
+    "id": "beh-070",
+    "domain": "Behavioral/HR",
+    "question": "Where do you want to grow in the next two years? Give a concise, evidence-backed answer.",
+    "answer_framework": "Choose role-relevant skills, a concrete plan, and how you will create value while learning.",
+    "topic": "motivation",
+    "difficulty": "medium",
+    "tags": [
+      "behavioral",
+      "hr",
+      "motivation",
+      "star"
+    ],
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "source_note": "Question paraphrased and answer framework authored for this project; see source for related public preparation material."
+  }
+]
