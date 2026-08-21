@@ -1,0 +1,13 @@
+streamlit==1.49.1
+langgraph==0.6.6
+langchain-core==0.3.75
+groq==0.31.0
+google-genai==1.31.0
+pypdf==6.0.0
+pdfplumber==0.11.7
+faiss-cpu==1.12.0
+scikit-learn==1.7.1
+numpy==2.3.2
+reportlab==4.4.3
+python-dotenv==1.1.1
+pytest==8.4.1
