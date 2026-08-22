@@ -36,7 +36,7 @@ flowchart LR
 | UI | Streamlit |
 | Agent orchestration | LangGraph state graphs |
 | LLM providers | Groq OpenAI-compatible chat API by default; Gemini API fallback |
-| Retrieval | TF-IDF normalized vectors with FAISS inner-product search |
+| Retrieval | Standard-library TF-IDF cosine retrieval with optional FAISS acceleration |
 | Resume parsing | pypdf with validation for empty, malformed, and image-only PDFs |
 | Reporting | ReportLab PDF generation |
 | Testing | pytest unit tests for parser, retrieval, and offline agent fallback |
@@ -90,7 +90,7 @@ For Gemini, use `LLM_PROVIDER = "gemini"`, `GEMINI_API_KEY`, and `GEMINI_MODEL`.
 
 ### If dependency installation fails
 
-Community Cloud can use a newer Python version than the local development machine. This repository pins Python 3.14-compatible wheels for Streamlit, pandas, SciPy, scikit-learn, and FAISS. If an existing failed app still uses a cached environment, open **Manage app → Settings**, delete the failed app, and redeploy from the same repository with **Advanced settings → Python 3.12** selected. Streamlit documents that the Python version is chosen during deployment and cannot be changed in place after deployment [7].
+Community Cloud can use a newer Python version than the local development machine. The runtime requirements contain only packages imported by the app and avoid forcing Streamlit Cloud to compile SciPy or scikit-learn. Retrieval works with a pure-Python TF-IDF fallback; FAISS is optional acceleration for local environments. If an existing failed app still uses a cached environment, open **Manage app → Settings**, delete the failed app, and redeploy from the same repository with **Advanced settings → Python 3.12** selected. Streamlit documents that the Python version is chosen during deployment and cannot be changed in place after deployment [7].
 
 ## Provider choice
 
