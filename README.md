@@ -76,6 +76,8 @@ The suite covers successful text extraction, malformed/empty input handling, ret
 
 ## Deployment notes
 
+**Live demo:** [PrepPilot on Streamlit Community Cloud](https://ai-interview-resume-prep-agent.streamlit.app/)
+
 Create a public GitHub repository, then deploy the repository from [Streamlit Community Cloud](https://share.streamlit.io/). In the app's Streamlit secrets, add:
 
 ```toml
